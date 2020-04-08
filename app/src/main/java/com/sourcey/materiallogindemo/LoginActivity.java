@@ -57,15 +57,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
         }
-      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{
-                        Manifest.permission.READ_EXTERNAL_STORAGE
-                }, 10);
 
-            }
-        }
-*/
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
