@@ -18,25 +18,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:src="@mipmap/logout" />
-
-
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login3"
+            android:id="@+id/btn_sendAuto"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
             android:layout_marginBottom="10dp"
             android:padding="12dp"
-            android:text="Browse" />
+            android:text="Check for New Files" />
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_sendAuto"
+            android:id="@+id/btn_login3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:padding="12dp"
-            android:text="Auto Update" />
+            android:text="Browse" />
+
+
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_login4"
