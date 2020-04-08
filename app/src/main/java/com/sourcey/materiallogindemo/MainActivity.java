@@ -1,14 +1,17 @@
 package com.sourcey.materiallogindemo;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,17 +20,24 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.net.URLConnection;
 import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button button ;
+    Button button;
     Button btn_login4;
+    Button btnSendAuto;
+    ImageView logout;
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        context = this;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 
             int permissionCheck = ContextCompat.checkSelfPermission(
                     this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -36,8 +46,59 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+        logout = (ImageView) findViewById(R.id.ivLogout);
 
-        button = (Button)findViewById(R.id.btn_login3) ;
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPrefsUtils.clearPreference(MainActivity.this,"isLogined");
+                SharedPrefsUtils.clearPreference(MainActivity.this,"devicetype");
+                finish();
+            }
+        });
+        btnSendAuto = (Button) findViewById(R.id.btn_sendAuto);
+
+        btnSendAuto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = null;
+
+                File filemodified = getLatestFilefromDir(Environment.getExternalStorageDirectory().getPath() + "/" + "Download");
+
+                final Uri data = FileProvider.getUriForFile(context, "com.sourcey.materiallogindemo.myprovider", filemodified);
+                context.grantUriPermission(context.getPackageName(), data, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                // Toast.makeText(MainActivity.this,"aadd"+filemodified.getAbsolutePath(),Toast.LENGTH_LONG).show();
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.setType("*/*");
+                i.putExtra(Intent.EXTRA_STREAM, data);
+                i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                PackageManager pm = getPackageManager();
+                List<ResolveInfo> list = pm.queryIntentActivities(i, 0);
+                if (list.size() > 0) {
+                    String packageName = null;
+                    String className = null;
+                    boolean found = false;
+
+                    for (ResolveInfo info : list) {
+                        packageName = info.activityInfo.packageName;
+                        if (packageName.equals("com.android.bluetooth")) {
+                            className = info.activityInfo.name;
+                            found = true;
+                            break;
+                        }
+                    }
+                    //CHECK BLUETOOTH available or not------------------------------------------------
+                    if (!found) {
+                        Toast.makeText(MainActivity.this, "Bluetooth not been found", Toast.LENGTH_LONG).show();
+                    } else {
+                        i.setClassName(packageName, className);
+                        startActivity(i);
+                    }
+                }
+            }
+        });
+        button = (Button) findViewById(R.id.btn_login3);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        btn_login4 = (Button)findViewById(R.id.btn_login4) ;
+        btn_login4 = (Button) findViewById(R.id.btn_login4);
 
         btn_login4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +119,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private File getLatestFilefromDir(String dirPath) {
+        File dir = new File(dirPath);
+        File[] files = dir.listFiles();
+        if (files == null || files.length == 0) {
+            return null;
+        }
+
+        File lastModifiedFile = files[0];
+        for (int i = 1; i < files.length; i++) {
+            if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+                lastModifiedFile = files[i];
+            }
+        }
+        return lastModifiedFile;
     }
 
     @Override
@@ -98,11 +175,12 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
 
-        switch(requestCode) {
+        switch (requestCode) {
 
             case 7:
 
@@ -138,5 +216,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 break;
-        }}
+        }
+    }
 }
