@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transstatus">
+        <item>@string/all</item>
+        <item>@string/instantcap</item>
+        <item>@string/nextday</item>
+    </string-array>
+    <string-array name="transtype">
+        <item>@string/all</item>
+        <item>@string/deposit</item>
+        <item>@string/withdraw</item>
+    </string-array>
+    <color name="agent_details_heading">#939393</color>
+    <color name="background_color">#eeeeee</color>
+    <color name="balance_profile">#73C289</color>
+    <color name="black">#000000</color>
+    <color name="blue_color_new">#009EDF</color>
+    <color name="buttonpressedcolor">#78a2c3</color>
+    <color name="canvas">#f0f0f0</color>
+    <color name="cb_errorRed">#e40000</color>
+    <color name="cb_payu_blue">#368ecd</color>
+    <color name="cb_vpa_enter_vpa">#9b9b9b</color>
+    <color name="cb_vpa_text_background">#f6fcce</color>
+    <color name="cb_vpa_text_border">#dcd36b</color>
+    <color name="cb_vpa_text_highlighter">#00adf2</color>
+    <color name="colorAccent">#004d99</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBtnSubmit">#f8b131</color>
+    <color name="colorError">#ff0000</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorSelText">#333333</color>
+    <color name="colorText">#80191919</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_amt_background">#E6E6E6</color>
+    <color name="color_enter_cvv">#9C9C9C</color>
+    <color name="color_paynow_button">#3488C4</color>
+    <color name="color_text_on_card">#404040</color>
+    <color name="colorblack">#87191919</color>
+    <color name="colorblackText">#000000</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="dark_blue_background">#193F88</color>
+    <color name="divider_grey">#A3A3A3</color>
+    <color name="doc_backgrd">#F1F1F1</color>
+    <color name="doc_submit_backgrd">#39A6DE</color>
+    <color name="doc_text">#929292</color>
+    <color name="edittext_bottom">#000000</color>
+    <color name="error_text">#F5F5CB</color>
+    <color name="expandedtextcolor">#39a6dd</color>
+    <color name="green">#008000</color>
+    <color name="green_tab">#8BC238</color>
+    <color name="green_text">#1BAD7C</color>
+    <color name="grey_dark">#37474f</color>
+    <color name="grey_light">#757575</color>
+    <color name="header_color">#004d99</color>
+    <color name="header_text_color">#39a6dd</color>
+    <color name="header_unselected">#0058AF</color>
+    <color name="home_black_tab">#191919</color>
+    <color name="home_grey_tab">#A3A3A3</color>
+    <color name="home_menu_text">#87191919</color>
+    <color name="input_text_color">#4d606f</color>
+    <color name="kyc_submit">#193F86</color>
+    <color name="light_blue">#89B0FA</color>
+    <color name="light_grey">#72c8cdd2</color>
+    <color name="link_text_color">#f8b133</color>
+    <color name="note_bg_color">#EAF8FF</color>
+    <color name="pay_text_color">#ABBD8F</color>
+    <color name="plan_dialog_heading">#333133</color>
+    <color name="plan_dialog_sub_heading">#939193</color>
+    <color name="plan_dialog_values">#6E6C6E</color>
+    <color name="profile_bank_text">#212121</color>
+    <color name="profile_bank_text_value">#404040</color>
+    <color name="profile_border">#70000000</color>
+    <color name="profile_edittext">#193F86</color>
+    <color name="service_name">#717171</color>
+    <color name="success_flexi">#73C289</color>
+    <color name="tabSelectedTextColor">#004d99</color>
+    <color name="tab_shadow">#D1D1D1</color>
+    <color name="tab_text_selected">#004d99</color>
+    <color name="tabsScrollColor">#3488C4</color>
+    <color name="text_color_green">#8ac432</color>
+    <color name="text_color_red">#c43232</color>
+    <color name="text_color_report">#9C9C9C</color>
+    <color name="textcolor">#004C88</color>
+    <color name="titlebarbgcolor">#004C88</color>
+    <color name="titlebartextcolor">#FFFFFF</color>
+    <color name="transaction_cancel">#F0BA06</color>
+    <color name="transaction_failed">#F30208</color>
+    <color name="transaction_pending">#F09A06</color>
+    <color name="transaction_success">#49A315</color>
+    <color name="transpparent">#80D1D1D1</color>
+    <color name="webviewbgcolor">#004C88</color>
+    <color name="white">#ffffff</color>
+    <dimen name="ButtonFontSize">18sp</dimen>
+    <dimen name="CheckBoxFontSize">15sp</dimen>
+    <dimen name="EditFontSize">18sp</dimen>
+    <dimen name="HeaderFontSize">20sp</dimen>
+    <dimen name="HintTextFontSize">13sp</dimen>
+    <dimen name="MarginFromBottom">8dp</dimen>
+    <dimen name="MarginFromLeft">8dp</dimen>
+    <dimen name="MarginFromRight">8dp</dimen>
+    <dimen name="MarginFromTop">8dp</dimen>
+    <dimen name="Padding">5dp</dimen>
+    <dimen name="PaddingBottom">5dp</dimen>
+    <dimen name="PaddingLeft">8dp</dimen>
+    <dimen name="PaddingRight">5dp</dimen>
+    <dimen name="PaddingTop">5dp</dimen>
+    <dimen name="RadioButtonFontSize">15sp</dimen>
+    <dimen name="SmallFontSize">12sp</dimen>
+    <dimen name="SpnMargin">10dp</dimen>
+    <dimen name="SubHeaderFontSize">15sp</dimen>
+    <dimen name="TextFontSize">15sp</dimen>
+    <dimen name="TitleBarHeight">35dp</dimen>
+    <string name="aadhar_num">Aadhar number</string>
+    <string name="aeps_tnc_agent">1) I hereby confirm that the Customer has been explained (in a language know to the Customer) about the nature of information, sharing of such information upon authentication, aspects of the transaction and the terms and conditions applicable to this transaction and the Customer has understood and authorized YES BANK to fetch applicable data from UIDAI; \n2) I hereby confirm that the Customer has provided all the information voluntarily to the Bank and are true, correct and complete. </string>
+    <string name="aeps_tnc_customer">1) I, the Customer hereby authorizes the Bank store my AADHAR number and to fetch, authenticate and store all such necessary details retrieved or to be retrieved from UIDAI through AADHAR Number and IRIS/biometric authentication for the purpose of this transaction. In case of any discrepancies, the Bank reserves the sole right to block my account/ relation and transaction without any further notice or intimation. \n2)      Customer hereby states and undertake that it has no objection, if the information disclosed to the Bank is authenticated vide Aadhaar based system. Customer hereby voluntarily agree and confirm to provide or disclose (as required under the Aadhaar Act 2016 and Regulations framed there under) my identification information (Aadhaar number, biometric information &amp; demographic information) for Aadhaar based authentication system and/or such similar authentication mechanism as provided or stipulated by the Government, from time to time, for the purpose of availing banking services, including operations of account or any other facility relating to banking operations. \n3)      The Customer hereby agree and confirm that the Bank will not be obliged to process any request made by me, if: a.      Aadhaar number provided by me is incorrect b.      Details in account does not match with details available with UIDAI \n4)      The Customer hereby agree and confirm that the Aadhaar details may be updated for all my banking services, including but not limited to the operation of bank account, for the purposes of authentication.  \n5)      The Customer hereby agree and confirm that my account may be used for receiving any government payments across schemes that the Customer is eligible and/ or any other payment using the Aadhaar based information. The Customer hereby acknowledge and agree that NPCI may map the Customer’s account in the Aadhaar Mapper of NPCI. \n6)      The Customer hereby confirms that the Aadhaar detail provided by the Customer is true, correct and complete in all aspect. \n7)      The Customer hereby acknowledges that the Bank will not have any liability or responsibility, if the details provided by the Customer is or subsequently becomes false, incorrect or incomplete, either in part or as a whole.  \n8)      Before agreeing to the above-mentioned terms and conditions, the Customer have been explained (in a language know to the Customer) about the nature of information that may be shared upon authentication and have understood the nature and implication of the same, as stipulated under the applicable law. The Customer declares that all the information has been voluntarily furnished by them to the Bank, without any duress or coercion.
+\n9)      The Customer hereby gives consent to use/exchange or share their Aadhaar number, Aadhaar information for registration of client information with Exchange, KRA, CERSAI and with any other regulatory or statutory authorities or as the Bank deems fit or as per requirements of law. \n10)  The Customer hereby understands and agrees that all identity information provided by the Customer will only be used for on boarding me for the purpose of the transaction.  \n11) The Customer hereby understands and agrees that Bank may disclose the identity information provided by the Customer to only CIDR for the purpose of authentication or authorization \n12)  The Customer hereby understands and agrees that the biometric authentication may be treated as my signature \n13)  The Customer hereby declare that the above information has been provided voluntarily out of his/her own discretion and volition. All information provided by the Customer or information/date retrieved from UIDAI in respect of the Customer is true, correct, updated and complete. </string>
+    <string name="all">ALL</string>
+    <string name="amount">Amount</string>
+    <string name="app_name">AEPS_lib</string>
+    <string name="canceled">Cancel</string>
+    <string name="capture">Capture</string>
+    <string name="changepass_reset">Reset</string>
+    <string name="check_connection">Please check your network connection.</string>
+    <string name="close">CLOSE</string>
+    <string name="customer_mobile">Customer Mobile Number.</string>
+    <string name="data_not_received">Data not received properly.</string>
+    <string name="deposit">DEPOSIT</string>
+    <string name="download">Download</string>
+    <string name="enter_aadhaar_number">Please Enter Aadhaar Number</string>
+    <string name="enter_adhar">Please enter aadhaar number.</string>
+    <string name="enter_amount">Please Enter Amount</string>
+    <string name="enter_customer_mobile">Please Enter Customer Mobile Number.</string>
+    <string name="enter_less_amount">Maximum transaction amount allowed is </string>
+    <string name="enter_more_amount">Minimum transaction amount should be </string>
+    <string name="enter_valid_adhar">Please Enter Valid Aadhaar Number</string>
+    <string name="enter_valid_amount">Please Enter Valid Amount</string>
+    <string name="error_aeps_agent_tnc">Please Select Agent Terms</string>
+    <string name="error_aeps_customer_tnc">Please Select Customer Terms</string>
+    <string name="error_api_details">Api Details Not Found!</string>
+    <string name="finish">Finish</string>
+    <string name="improper_response">Improper response from server</string>
+    <string name="instant">Instant</string>
+    <string name="instantcap">INSTANT</string>
+    <string name="invalidResponse">Invalid response from server.</string>
+    <string name="next_day">Next day</string>
+    <string name="nextday">NEXTDAY</string>
+    <string name="no_storage_permission">No External Storage Permission</string>
+    <string name="payment_amount">Amount</string>
+    <string name="payment_device_provider">Biometric Device Provider</string>
+    <string name="payment_sdus_bank">Select Bank</string>
+    <string name="payment_sub">Submit</string>
+    <string name="print">Print</string>
+    <string name="receipt">Receipt</string>
+    <string name="report">Report</string>
+    <string name="reset">Reset</string>
+    <string name="select_bank_option">Please Select Bank</string>
+    <string name="select_bank_text">Select Bank</string>
+    <string name="select_device_provider">Please Select Device Provider</string>
+    <string name="select_provider_bank">Select The Bank Before you proceed further</string>
+    <string name="share">Share</string>
+    <string name="str_send">Send</string>
+    <string name="submit">Submit</string>
+    <string name="ten_digit_mobile">Please Enter 10 Digit Customer Mobile Number</string>
+    <string name="tnc_agent">I/Retailer hereby accepts and confirms all the terms and conditions under best of my knowledge.</string>
+    <string name="tnc_customer">I/Customer here by accepts and confirms all the terms and conditions under best of my knowledge.</string>
+    <string name="tnc_cutomer">I/Customer here by accepts and confirms all the terms and conditions under best of my knowledge.</string>
+    <string name="twenter_adhar">Please Enter 12 Digit Aadhaar Number</string>
+    <string name="unexpected_response">Unexpected response from server</string>
+    <string name="valid_customer_mobile">Please Enter Valid Customer Mobile Number.</string>
+    <string name="whatsapp_share_dialog_title">WhatsApp mobile number on which you\'ll receive your receipt:</string>
+    <string name="withdraw">WITHDRAW</string>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:background">@color/transpparent</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="PDFText" parent="Text">
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+    <style name="ScrollView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="background">@color/colorWhite</item>
+    </style>
+    <style name="Spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/SpnMargin</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">@color/edittext_disabled</item>
+        <item name="android:textSize">@dimen/EditFontSize</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+    <style name="Text" parent="@style/TextAppearance.Compat.Notification">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorblackText</item>
+        <item name="android:layout_marginLeft">@dimen/MarginFromLeft</item>
+        <item name="android:paddingTop">@dimen/PaddingTop</item>
+        <item name="android:paddingBottom">@dimen/PaddingBottom</item>
+        <item name="android:textSize">@dimen/TextFontSize</item>
+    </style>
+    <style name="edtText_style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSelText</item>
+        <item name="android:textSize">@dimen/EditFontSize</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="edttext_style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSelText</item>
+        <item name="android:textSize">@dimen/EditFontSize</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="msgText" parent="@style/Text">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/HintTextFontSize</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/SpnMargin</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/EditFontSize</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+    <style name="submit_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/ButtonFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:clickable">true</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <declare-styleable name="SearchableSpinner"><attr format="string" name="hintText"/></declare-styleable>
+</resources>

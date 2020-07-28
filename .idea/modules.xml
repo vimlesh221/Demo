@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/materiallogindemo-master.iml" filepath="$PROJECT_DIR$/materiallogindemo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aepssdk.iml" filepath="$PROJECT_DIR$/.idea/modules/Aepssdk.iml" group="Aepssdk" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aeps_lib-1July/aeps_lib-1July.iml" filepath="$PROJECT_DIR$/.idea/modules/aeps_lib-1July/aeps_lib-1July.iml" group="Aepssdk/aeps_lib-1July" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aeps_lib-UAT- 23June/aeps_lib-UAT- 23June.iml" filepath="$PROJECT_DIR$/.idea/modules/aeps_lib-UAT- 23June/aeps_lib-UAT- 23June.iml" group="Aepssdk/aeps_lib-UAT- 23June" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Aepssdk/app" />
     </modules>
   </component>
 </project>

@@ -1,62 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="24dp"
-        android:paddingTop="24dp"
-        android:paddingRight="24dp">
+        android:text="@string/onclick"
+       />
 
-        <ImageView
-            android:id="@+id/ivLogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:src="@mipmap/logout" />
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_sendAuto"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:layout_marginBottom="10dp"
-            android:padding="12dp"
-            android:text="Check for New Files" />
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:padding="12dp"
-            android:text="Browse" />
-
-
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login4"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:padding="12dp"
-            android:text="Change Password" />
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login5"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:visibility="gone"
-            android:layout_marginBottom="10dp"
-            android:padding="12dp"
-            android:text="Help" />
-
-
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>
