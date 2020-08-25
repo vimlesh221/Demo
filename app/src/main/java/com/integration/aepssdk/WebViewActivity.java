@@ -59,7 +59,8 @@ public class WebViewActivity extends AppCompatActivity {
         //  mWebview.loadUrl(" https://www.payindia.technology/user/public/login");
       // mWebview.loadUrl(" https://www.apnaseva.co.in/user/public/login");
       //  mWebview.loadUrl(" https://www.payezy.net/user/public/login");
-        mWebview.loadUrl("https://www.meseva.in/user/public/login");
+       // mWebview.loadUrl("https://www.meseva.in/user/public/login");
+        mWebview.loadUrl("https://www.sankramdigital.com/user/public/login");
         mWebview.getSettings().setJavaScriptEnabled(true); // enable javascript
         mWebview.addJavascriptInterface(new WebAppInterface(this), "Android");
 

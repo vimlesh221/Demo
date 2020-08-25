@@ -1,6 +1,8 @@
 <resources>
    <!-- <string name="app_name">Apna Seva</string>-->
-   <!--<string name="app_name">Payezy</string>-->
-    <string name="app_name">Me Seva</string>
-    <string name="onclick">OnClick</string>
+    <!--<string name="app_name">Payezy</string>-->
+    <!--<string name="app_name">Me Seva</string>-->
+   <string name="app_name">Sankram Digital</string>
+   <string name="onclick">OnClick</string>
+
 </resources>

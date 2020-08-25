@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                Intent intent = new Intent(MainActivity.this, AepsHome.class);
                 Utility utility = Utility.getInstance();
-                intent.putExtra("header", utility.encryptHeader(getHeaderJson(), "bRuD5WYw5wd0rdHR9yLlM6wt2vteuiniQBqE70nAuhU="));
-                intent.putExtra("body", utility.encryptBody(getBodyJson(), "G7knrNLLUTk44VJ6lZBkvV1m6KW48Kr1hywKAtOt4BI="));
+                intent.putExtra("header", utility.encryptHeader(getHeaderJson(), "1Vx1IGJMp/8Y7oMQtJcr0gj3gMsIEUy0SyDMkousZ0c="));
+                intent.putExtra("body", utility.encryptBody(getBodyJson(), "akb/UAlFu0ul7QiI2imrniP9NI71jR1cNjVkSt7AB6w="));
                 intent.putExtra("receipt", true);
                 startActivityForResult(intent, REQ_CODE_AEPS);
             }
@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
     private String getHeaderJson() {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("merchantId", "674629");
+            jsonObject.put("merchantId", "610379623");
             jsonObject.put("Timestamp", Utility.getCurrentTimeStamp());
-            jsonObject.put("merchantKey", "f7IenvVbyeT/Y+iZbnxnxV6wDGTQSnXTgFS/HDvY1X4=");
+            jsonObject.put("merchantKey", "wNYk/TXbrfuCoyyzzyDFyJmogFgERpe1jgBk8k++8mU=");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
