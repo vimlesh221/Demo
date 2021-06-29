@@ -1,4 +1,2 @@
-include ':aeps_lib-1July'
-include ':aeps_lib-UAT- 23June'
 include ':app'
-rootProject.name = "Aepssdk"
+rootProject.name = "BasicMVVMExample"
